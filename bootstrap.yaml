@@ -10,11 +10,12 @@ spec:
   project: default
   source:
     path: apps
-    repoURL: https://github.com/Piotr1215/crossplane-box
+    repoURL: https://github.com/zenvanexus/crossplane-box
     targetRevision: HEAD
   syncPolicy:
     automated:
       selfHeal: true
+      prune: true
     syncOptions:
       - CreateNamespace=true
 ---
